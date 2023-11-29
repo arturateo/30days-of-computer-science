@@ -1,6 +1,3 @@
-from statistics import mean
-
-
 def search_matrix(matrix, target):
     for i in matrix:
         left = 0
