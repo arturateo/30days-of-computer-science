@@ -52,8 +52,8 @@ def change_vowels(word):
     right = len(word) - 1
     while left < right:
         if word[left].lower() in data and word[right].lower() in data:
-            left_word += word[left]
-            right_word += word[right]
+            left_word += word[right]
+            right_word += word[left]
             left += 1
             right -= 1
         elif not (word[left] in data):
