@@ -13,6 +13,10 @@ def guess_number(n, pick):
     right = len(all_num) - 1
     if len(all_num) == 1:
         return n
+    if all_num[0] == pick:
+        return pick
+    elif all_num[-1] == pick:
+        return pick
 
     while left < right:
         mid = (left + right) // 2
@@ -25,6 +29,7 @@ def guess_number(n, pick):
             return all_num[mid]
 
 
-print(guess_number(10, 6))
-print(guess_number(1, 1))
-print(guess_number(2, 1))
+# print(guess_number(10, 6))
+# print(guess_number(1, 1))
+# print(guess_number(2, 1))
+print(guess_number(4, 1))
